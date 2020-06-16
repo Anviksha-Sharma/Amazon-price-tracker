@@ -1,16 +1,16 @@
 {
-  "_from": "nodemailer",
-  "_id": "nodemailer@6.4.8",
+  "_from": "cheerio",
+  "_id": "cheerio@1.0.0-rc.3",
   "_inBundle": false,
-  "_integrity": "sha512-UbJD0+g5e2H20bWv7Rpj3B+N3TMMJ0MLoLwaGVJ0k3Vo8upq0UltwHJ5BJfrpST1vFa91JQ8cf7cICK5DSIo1Q==",
-  "_location": "/nodemailer",
+  "_integrity": "sha512-0td5ijfUPuubwLUu0OBoe98gZj8C/AA+RW3v67GPlGOrvxWjZmBXiBCRU+I8VEiNyJzjth40POfHiz2RB3gImA==",
+  "_location": "/cheerio",
   "_phantomChildren": {},
   "_requested": {
     "type": "tag",
     "registry": true,
-    "raw": "nodemailer",
-    "name": "nodemailer",
-    "escapedName": "nodemailer",
+    "raw": "cheerio",
+    "name": "cheerio",
+    "escapedName": "cheerio",
     "rawSpec": "",
     "saveSpec": null,
     "fetchSpec": "latest"
@@ -19,56 +19,65 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/nodemailer/-/nodemailer-6.4.8.tgz",
-  "_shasum": "aca52886e4e56f71f6b8a65f5ca6b767ca751fc7",
-  "_spec": "nodemailer",
+  "_resolved": "https://registry.npmjs.org/cheerio/-/cheerio-1.0.0-rc.3.tgz",
+  "_shasum": "094636d425b2e9c0f4eb91a46c05630c9a1a8bf6",
+  "_spec": "cheerio",
   "_where": "C:\\Users\\sea\\Desktop\\DEV PEP",
   "author": {
-    "name": "Andris Reinman"
+    "name": "Matt Mueller",
+    "email": "mattmuelle@gmail.com",
+    "url": "mat.io"
   },
   "bugs": {
-    "url": "https://github.com/nodemailer/nodemailer/issues"
+    "url": "https://github.com/cheeriojs/cheerio/issues"
   },
   "bundleDependencies": false,
-  "dependencies": {},
+  "dependencies": {
+    "css-select": "~1.2.0",
+    "dom-serializer": "~0.1.1",
+    "entities": "~1.1.1",
+    "htmlparser2": "^3.9.1",
+    "lodash": "^4.15.0",
+    "parse5": "^3.0.1"
+  },
   "deprecated": false,
-  "description": "Easy as cake e-mail sending from your Node.js applications",
+  "description": "Tiny, fast, and elegant implementation of core jQuery designed specifically for the server",
   "devDependencies": {
-    "bunyan": "1.8.12",
-    "chai": "4.2.0",
-    "eslint-config-nodemailer": "1.2.0",
-    "eslint-config-prettier": "6.11.0",
-    "grunt": "1.1.0",
-    "grunt-cli": "1.3.2",
-    "grunt-eslint": "23.0.0",
-    "grunt-mocha-test": "0.13.3",
-    "libbase64": "1.2.1",
-    "libmime": "4.2.1",
-    "libqp": "1.1.0",
-    "mocha": "7.2.0",
-    "nodemailer-ntlm-auth": "1.0.1",
-    "proxy": "1.0.1",
-    "proxy-test-server": "1.0.0",
-    "sinon": "9.0.2",
-    "smtp-server": "3.6.0"
+    "benchmark": "^2.1.0",
+    "coveralls": "^2.11.9",
+    "expect.js": "~0.3.1",
+    "istanbul": "^0.4.3",
+    "jquery": "^3.0.0",
+    "jsdom": "^9.2.1",
+    "jshint": "^2.9.2",
+    "mocha": "^3.1.2",
+    "xyz": "~1.1.0"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">= 0.6"
   },
-  "homepage": "https://nodemailer.com/",
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "homepage": "https://github.com/cheeriojs/cheerio#readme",
   "keywords": [
-    "Nodemailer"
+    "htmlparser",
+    "jquery",
+    "selector",
+    "scraper",
+    "parser",
+    "html"
   ],
   "license": "MIT",
-  "main": "lib/nodemailer.js",
-  "name": "nodemailer",
+  "main": "./index.js",
+  "name": "cheerio",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nodemailer/nodemailer.git"
+    "url": "git://github.com/cheeriojs/cheerio.git"
   },
   "scripts": {
-    "postinstall": "node -e \"try{require('./postinstall')}catch(e){}\"",
-    "test": "grunt"
+    "test": "make test"
   },
-  "version": "6.4.8"
+  "version": "1.0.0-rc.3"
 }
